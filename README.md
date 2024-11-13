@@ -14,3 +14,8 @@
 
 <img src="./Activitat_8/readme_img/post1.png"/>
 <img src="./Activitat_8/readme_img/post2.png"/>
+
+
+## GET - SWAGGER - NO FUNCIONAL ERROR 400
+
+<img src="./Activitat_8/readme_img/get_noFuncional.png"/>
