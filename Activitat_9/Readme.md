@@ -1,4 +1,4 @@
-## SWAGGER - Body Fields
+## POSTMAN - Body Fields
 
 Se definen los atributos y las validaciones de un modelo.
 Su funcionamiento consiste en que, a través de un item_id y un item (un objeto de tipo Item), valida los datos y devuelve un JSON como resultado.
@@ -21,7 +21,7 @@ Case 3: Cuando introducimos los datos correctamente sin incumplir ninguna restri
 
 <img src="./Readme_imgs/bodyFields1_200_Postman.JPG"/>
 
-## POSTMAN - Body Nested Models
+## SWAGGER - Body Nested Models
 
 Observamos que, a través de un modelo, se definen los tipos de cada parámetro, y mediante un submodelo podemos declarar objetos JSON con atributos, tipos y validaciones específicas.
 
