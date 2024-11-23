@@ -41,7 +41,16 @@ El funcionamiento de éste código consiste en pasar los parámetros item_id e i
 
 ## POSTMAN - Read Users
 
-<img src="./Readme_imgs/readUsers_postman.JPG"/>
+A través del main.py llamamos al resto de archivos (connection.py, readUsers.py, user_sch.py) que estan en sus carpetas correspondientes.
 
-## SWAGGER - Read Users
-<img src="./Readme_imgs/readUsers_swagger.JPG"/>
+Dónde a través de la FastAPI, i un end-point que definimos cómo /users definimos una función que hace lo siguiente:
+
+1. Se conecta a la base de datos de PostgreSQL (connection.py)
+
+2. Ejecuta una consulta SQL para obtener todos los registros de la tabla users, devolviendolo en una lista de tuplas (readUser.py)
+
+3. Transforma las tuplas obtenidas a una lista de diccionario para que la salida sea en formato JSON. (user_sch.py)
+
+Con el objetivo de consultar los usuarios almacenados de la Base de Datos de PostgreSQL que tenemos, a través del end-point /users, devolviendo los registros en formato JSON.
+
+<img src="./Readme_imgs/readUsers_postman.JPG"/>
