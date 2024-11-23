@@ -35,3 +35,13 @@ El funcionamiento de éste código consiste en pasar los parámetros item_id e i
 <img src="./Readme_imgs/bodyNested1_200_Swagger.JPG"/>
 
 <img src="./Readme_imgs/bodyNested2_200_Swagger.JPG"/>
+
+<br>
+
+
+## POSTMAN - Read Users
+
+<img src="./Readme_imgs/readUsers_postman.JPG"/>
+
+## SWAGGER - Read Users
+<img src="./Readme_imgs/readUsers_swagger.JPG"/>

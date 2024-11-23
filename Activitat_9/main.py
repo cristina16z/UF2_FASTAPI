@@ -1,8 +1,14 @@
 import connection
-import users_sch
+import user_sch
 import users
+from fastapi import FastAPI
+from typing import List
+
+app = FastAPI()
+
 
 
 @app.get ("/users", response_model=List[dict])
 async def read_users():
-    return users_sch.user_schema(users.read())
+    db_connection = connection.connection_db()
+    return user_sch.users_schema(users.read(db_connection))
