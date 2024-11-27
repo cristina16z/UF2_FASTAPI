@@ -1,6 +1,5 @@
 import psycopg2
 
-
 def connection_db():
     try:
         conn = psycopg2.connect(
@@ -11,7 +10,7 @@ def connection_db():
             port='5432'
         )
 
-        print(f'Conexió establerta correctament')
+        print('Conexió establerta correctament')
 
         return conn
 
