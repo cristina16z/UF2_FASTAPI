@@ -1,0 +1,26 @@
+version: '3.1'
+services:
+  db:
+    image: postgres:13
+    container_name: JocPenjat_paraules
+    environment:
+      - POSTGRES_DB=paraules_joc
+      - POSTGRES_PASSWORD=system
+      - POSTGRES_USER=cristina
+    ports:
+      - "5432:5432"
+    volumes:
+      - local_pgdata:/var/lib/postgresql/data
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: pgadmin_paraules
+    ports:
+      - "80:80"
+    environment:
+      PGADMIN_DEFAULT_EMAIL: cristina@gmail.com
+      PGADMIN_DEFAULT_PASSWORD: system
+    volumes:
+        - pgadmin-data:/var/lib/pgadmin
+volumes:
+  local_pgdata:
+  pgadmin-data:
