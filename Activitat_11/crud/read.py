@@ -52,7 +52,7 @@ def read_estadistiques(conexion):
     conn = conexion
     cursor = conn.cursor()
 
-    sql_read_tematica = ''' SELECT username, punts, total_partides, partides_guanyades, partides_amb_mes_punts from partida, jugador where partida.id_jugador = jugador.id '''
+    sql_read_tematica = ''' SELECT username, punts, total_partides, partides_guanyades, partida_amb_mes_punts, data_millor_puntuacio from partida, jugador where partida.id_jugador = jugador.id '''
 
     cursor.execute(sql_read_tematica)
     conn.commit()

@@ -46,7 +46,6 @@ async def estadistiques_text():
 
 
 # Extracció dades estadístiques 
-
 @app.get ("/start-game/estadistiques/puntuacio", response_model=List[dict])
 async def estadistiques():
     read_txt = read.read_estadistiques(db_connection)

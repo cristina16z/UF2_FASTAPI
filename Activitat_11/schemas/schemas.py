@@ -19,7 +19,13 @@ def gameErrors_schema(frases) -> dict:
 # Esquemes de les estadístiques
 
 def estadistiques_schema(frase) -> dict:
-    return {'username':frase}
+    return {'username':frase[0],
+            'punts':frase[1],
+            'total_partides': frase[2],
+            'partides_guanyades':frase[3],
+            'partida_amb_mes_punts':frase[4],
+            'data_partida_millor_puntuacio':frase[5]
+            }
 
 
 def estadistiques_schemas(frases) -> dict:
